@@ -34,13 +34,11 @@ When looking at a code file, it should be organized as follows top-down:
 - The React component definition function.
 
 ## Code review on functions
-
-- Check that destructure is not done on the parameters or arguments of
   functions. The only exception is the last argument of `createAsyncThunks`.
 
 ## Code review on `makeStyles`
 
-- `makeStyles` is based on Material-UI v4 CSS-in-JSS styling syntax.
+- `makeStyles` is based on Material-UI v4 CSS-in-JSS styl.
 - Check that CSS class keys created in `makeStyles` are all used inside the
   React component of the same file. Report any that are unused and can be
   removed.
@@ -72,7 +70,7 @@ When looking at a code file, it should be organized as follows top-down:
 - When importing interfaces or types, use `import type` or `import { type }`.
 - Do not attach native JavaScript event listeners directly.
 - Report if code causes mutations.
-- Provide context when using lazy-loaded slices and flag any issues.
+- Provide context when using lazy-loaded  and flag any issues.
 - When using `.length` as a conditional, they must be explicitly checked using a
   comparator such as `>`, `>=`, `<`, `<=` or `===`.
   - e.g. Must use `children.length > 0`, not `!children.length`.
